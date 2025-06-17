@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rod's E-portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script class="modal__language--img" src="./script.js"></script>
+    <script class="modal__language--img" src="https://kit.fontawesome.com/0554b89cbc.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "US3oQ39MhMt-kSSKz",
+      });
+   })();
+</script>
+</head>
+<body>
+ <section id="landing">
+    <nav>
+        <figure>
+            <img id="personal__logo" class="modal__language--img" src="./assets/rg-high-resolution-logo.png" alt="">
+        </figure>
+        <ul class="nav__link--list">
+            <li class="nav__link">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">About</a>
+            </li>
+            <li class="nav__link">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Projects</a>
+            </li>
+            <li class="nav__link">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black
+                ">Contact</a>
+            </li>
+            <li class="nav__link click">
+                <a href="#" class="
+                nav__link--anchor
+                link__hover-effect
+                link__hover-effect--black    
+                "><i class="fa-solid fa-circle-half-stroke"></i></a>
+            </li>
+        </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content">
+        <h1 class="title">Hey</h1>
+        <h1 class="title blue">I'm Rod.</h1>
+        <p class="header__para">
+            I'm a <b class="blue">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
+            <br>
+             Here's a bit more <b class="blue">about me.</b>
+        </p>
+        <div class="about-me__links">
+            <a href="https://www.linkedin.com/feed/" target="_blank" class="about-me__link click">
+               <i class="fa-brands fa-linkedin"></i>  
+            </a>
+            <a href="https://github.com/rgervacio0803" target="_blank" class="about-me__link click">
+               <i class="fa-brands fa-github"></i>  
+            </a>
+            <a href="" class="about-me__link click">
+               <i class="fa-solid fa-file-pdf"></i>  
+            </a>
+        </div>
+    </header>
+    <button class="mail__btn click">
+        <i class="fa-solid fa-envelope"></i>
+    </button>
+    <a href="#projects" class="scroll">
+    <div class="scroll__icon click"></div> 
+    </a>
+    <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">Here's a bit about me</h3>  
+          <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer.</h4>
+          <p class="modal__para">I'm a 21 year-old <b class="blue">frontend software engineer</b>with 
+            a strong passion for developing websites with great <b class="blue">user experience.</b>
+            <br>
+            I currently work on extremely difficult engineering problems and learn from a team consisting 
+            of some of the most <b class="blue">talented</b> and <b class="blue">experienced</b> software engineers every day.
+        </p>
+        <div class="modal__languages">
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+                <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                <span class="language__name">React</span>
+            </figure>
+        </div>
+        </div>
+        <div class="modal__half modal__contact">
+            <h3 class="modal__title modal__title--contact">Let's have a chat!</h3>
+            <h4 class="modal__sub-title modal__sub-title--contact">I'm currently open to new opportunities.</h4>
+            <form id="contact__form" action="">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">E-mail</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                    Send it my way
+                </button>
+            </form>
+            <div class="modal__overlay modal__overlay--loading">
+               <i class="fa-solid fa-spinner"></i> 
+            </div>
+            <div class="modal__overlay modal__overlay--success">
+              Thanks for the message! Looking forward to speaking to you soon.  
+            </div>
+        </div>
+        <i class="fas fa-times modal__exit click"></i>
+    </div>
+ </section>
+ <section id="projects">
+    <div class="container">
+        <div class="row">
+            <h1 class="section__title">
+                Here are some of my <span class="blue">projects</span>
+            </h1>
+            <ul class="project__list">
+                <li class="projects">
+                  <div class="project__wrapper">
+                    <img class="modal__language--img" src="./assets/books-4821356_1280.png" class="project__img" alt="">
+                    <div class="project__wrapper--bg"></div>
+                    <div class="project__description">
+                        <h3 class="project__description--title">
+                            Library Bookstore
+                        </h3>
+                        <h4 class="project__description--sub-title">
+                         HTML, CSS, JavaScript  
+                        </h4>
+                        <p class="project__description--para">United State's most
+                            awarded online library platform. Find your dream book with LIBRARY.
+                        </p>
+                            <div class="project__description--links">
+                                <a href="https://rgervacio0803.github.io/Rod-s-E-Commerce/" target="_blank" class="project__description--link">
+                                  <i class="fa-brands fa-github"></i>  
+                                </a>
+                                <a href="https://www.linkedin.com/feed/" target="_blank" class="project__description--link">
+                                  <i class="fa-brands fa-linkedin"></i>  
+                                </a>
+                            </div>
+                    </div>
+                </div>  
+                </li>
+                <li class="projects">
+                  <div class="project__wrapper">
+                    <img class="modal__language--img" src="./assets/shopping-5200288_1280.jpg" class="project__img" alt="">
+                    <div class="project__wrapper--bg"></div>
+                    <div class="project__description">
+                        <h3 class="project__description--title">
+                            Treact
+                        </h3>
+                        <h4 class="project__description--sub-title">
+                         HTML, CSS, JavaScript  
+                        </h4>
+                        <p class="project__description--para">Beautiful React templates for you.
+                            Our templates are easy to setup, understand and customize. 
+                            Fully modular components with a variety of pages and components.
+                        </p>
+                            <div class="project__description--links">
+                                <a href="https://rgervacio0803.github.io/Treact-Starter-Code/" target="_blank" class="project__description--link">
+                                  <i class="fa-brands fa-github"></i>  
+                                </a>
+                                <a href="https://www.linkedin.com/feed/" target="_blank" class="project__description--link">
+                                  <i class="fa-brands fa-linkedin"></i>  
+                                </a>
+                            </div>
+                    </div>
+                </div>  
+                </li>
+            </ul>
+        </div>
+    </div>
+ </section>
+ <footer>
+    <div class="container">
+        <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" class="modal__language--img" src="./assets/rg-high-resolution-logo.png" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white           
+                ">
+                GitHub
+            </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white           
+                ">
+                LinkedIn
+            </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white           
+                ">
+                Contact
+            </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white           
+                ">
+                Resume
+            </a>
+            </div>
+            <div class="footer__copyright">Copyright © 2025 Roderick Gervacio</div>
+        </div>
+    </div>
+ </footer>
+</body>
+</html>
