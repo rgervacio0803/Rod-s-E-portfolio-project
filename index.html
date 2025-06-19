@@ -20,13 +20,13 @@
 </script>
 </head>
 <body>
- <section id="landing">
+ <section id="landing" onmousemove="moveBackground(event)">
     <nav>
         <figure>
             <img id="personal__logo" class="modal__language--img" src="./assets/rg-high-resolution-logo.png" alt="">
         </figure>
         <ul class="nav__link--list">
-            <li class="nav__link">
+            <li class="nav__link" onclick="toggleModal()">
                 <a href="#" class="
                 nav__link--anchor
                 link__hover-effect
@@ -34,7 +34,7 @@
                 ">About</a>
             </li>
             <li class="nav__link">
-                <a href="#" class="
+                <a href="#projects" class="
                 nav__link--anchor
                 link__hover-effect
                 link__hover-effect--black
@@ -77,9 +77,11 @@
             </a>
         </div>
     </header>
-    <button class="mail__btn click" onclick="toggleModal()">
-        <i class="fa-solid fa-envelope"></i>
-    </button>
+    <a href="#">
+        <button class="mail__btn click" onclick="toggleModal()">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+    </a>
     <a href="#projects" class="scroll">
     <div class="scroll__icon click"></div> 
     </a>
@@ -160,7 +162,7 @@
             <ul class="project__list">
                 <li class="projects">
                   <div class="project__wrapper">
-                    <img class="modal__language--img" src="./assets/books-4821356_1280.png" class="project__img" alt="">
+                    <img src="./assets/books-4067415_1280.png" class="project__img" alt="">
                     <div class="project__wrapper--bg"></div>
                     <div class="project__description">
                         <h3 class="project__description--title">
@@ -185,7 +187,7 @@
                 </li>
                 <li class="projects">
                   <div class="project__wrapper">
-                    <img class="modal__language--img" src="./assets/shopping-5200288_1280.jpg" class="project__img" alt="">
+                    <img  src="./assets/google mockup.png" class="project__img" alt="">
                     <div class="project__wrapper--bg"></div>
                     <div class="project__description">
                         <h3 class="project__description--title">
@@ -220,28 +222,28 @@
                 <img class="footer__logo--img" class="modal__language--img" src="./assets/rg-high-resolution-logo.png" alt="">
             </figure>
             <div class="footer__social--list">
-                <a href="#" class="
+                <a href="https://github.com/rgervacio0803" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white           
                 ">
                 GitHub
             </a>
-                <a href="#" class="
+                <a href="https://www.linkedin.com/feed/" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white           
                 ">
                 LinkedIn
             </a>
-                <a href="#" class="
+                <a href="#" onclick="toggleModal()" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white           
                 ">
                 Contact
             </a>
-                <a href="#" class="
+                <a href="./assets/Sample software engineer RG.docx" target="_blank" class="
                 footer__social--link
                 link__hover-effect
                 link__hover-effect--white           
